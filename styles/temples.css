@@ -59,6 +59,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #FFD700;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
