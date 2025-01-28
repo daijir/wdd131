@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The country where I'm living</title>
+    <meta name="description" content="This is a page about the country where I'm living">
+    <meta name="author" content="Daijiro Sagane">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <div class="image-section">
+            <picture>
+                <source media="(min-width: 767px)" srcset="images/japan-wide.webp">
+                <img src="images/japan-narrow.webp" alt="Japan">
+            </picture>
+        </div>
+        <div class="info-section">
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 377,975 km²</li>
+                    <li>Population: 126.3 million</li>
+                    <li>Capital: Tokyo</li>
+                    <li>Language: Japanese</li>
+                    <li>Currency: Japanese Yen (¥)</li>
+                    <li>Time Zone: JST (UTC+9)</li>
+                    <li>Calling Code: +81</li>
+                    <li>Internet TLD: .jp</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <ul>
+                    <img src="images/icon.svg" alt="weather icon">
+                    <li>Temperature: <span id="temp">10</span> °C</li>
+                    <li>Wind Speed: <span id="speed">5</span> km/h</li>
+                    <li>Wind Chill: <span id="windchill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Daijiro Sagane | Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
