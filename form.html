@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Daijiro Sagane">
+    <meta name="description" content="This site contains basic form of product review.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div>
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div>
+                <fieldset class="rating-fieldset">
+                    <legend>Overall Rating</legend>
+                    <div>
+                        <label for="rating1">☆</label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+                    <div>
+                        <label for="rating2">☆☆</label>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </div>
+                    <div>
+                        <label for="rating3">☆☆☆</label>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </div>
+                    <div>
+                        <label for="rating4">☆☆☆☆</label>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </div>
+                    <div>
+                        <label for="rating5">☆☆☆☆☆</label>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div>
+                <fieldset class="features-fieldset">
+                    <legend>Which features did you find useful in the product?(Check all that apply)</legend>
+                    <div>
+                        <input type="checkbox" id="feature1" name="useful-features" value="Durability">
+                        <label for="feature1">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature2" name="useful-features" value="Ease if Use">
+                        <label for="feature2">Ease if Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature3" name="useful-features" value="Performance">
+                        <label for="feature3">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature4" name="useful-features" value="Design">
+                        <label for="feature4">Design</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="written-review">Written Review</label>
+                <textarea id="written-review" name="written-review"></textarea>
+            </div>
+
+            <div>
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="user-name">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> | Daijiro Sagane | Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

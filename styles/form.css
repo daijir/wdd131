@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d0d31;
+    padding: 15px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+main {
+    background-color: #c0b0b9;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating-fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.rating-fieldset label,
+.rating-fieldset input[type="radio"] {
+    display: block;
+}
+
+.rating-fieldset div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.features-fieldset div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.features-fieldset label {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #3d0d31;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a124a;
+}
+
+footer {
+    background-color: #2e0927;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer p {
+    color: white;
+    margin: 5px 0;
+}
+
+label[for="written-review"]::after,
+label[for="user-name"]::after {
+    content: " (Optional)";
+    color: blue;
+}
