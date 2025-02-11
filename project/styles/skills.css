@@ -1,0 +1,78 @@
+/* main要素のスタイル */
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* コンテンツの中央揃え */
+main > div {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* プロジェクトとスキルのスタイル */
+main h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main ul li p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* カードスタイル */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+/* メディアクエリ */
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .projects, .skills {
+        width: 45%;
+    }
+
+    .projects {
+        order: 1;
+    }
+
+    .skills {
+        order: 2;
+    }
+}

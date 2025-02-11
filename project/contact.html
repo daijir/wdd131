@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Contact</title>
+    <meta name="description" content="WDD 131 - Final Project - Daijiro Sagane - Contact">
+    <meta name="author" content="Daijiro Sagane">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Daijiro's Portfolio</h1>
+        <button class="hamburger">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="skills.html">Projects, Skills</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>Contact Info</h2>
+            <ul>
+                <li><p>Email: <a href="mailto:sag19004@byui.edu">sag19004@byui.edu</a></p></li>
+                <li><p>Phone: <a href="tel:+818034862812">+81 80-3486-2812</a></p></li>
+                <li><p>LinkedIn: <a href="https://www.linkedin.com/in/daijiro-sagane-b50506291/" target="_blank">Daijiro's LinkedIn Profile</a></p></li>
+                <li><p>Facebook: <a href="https://www.facebook.com/daijiro.sagane.1" target="_blank">Daijiro's Facebook Profile</a></p></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="https://formspree.io/f/xvgzbgzq" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>    
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> | Daijiro Sagane | Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

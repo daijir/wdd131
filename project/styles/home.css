@@ -1,0 +1,44 @@
+/* 画像のスタイル */
+main img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+main h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    main > div {
+        max-width: 45%;
+    }
+
+    main img {
+        margin-bottom: 0;
+    }
+}
