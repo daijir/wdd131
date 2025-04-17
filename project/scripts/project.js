@@ -12,38 +12,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const projects = [
         {
-            title: "Web Frontend Project",
-            description: "A web application for managing tasks.",
-            technologies: "HTML, CSS, JavaScript, React",
-            link: "#"
+            title: "日本の気候",
+            description: "javascriptを用いた日本の気候情報の表示",
+            technologies: "HTML, CSS, JavaScript",
+            link: "https://daijir.github.io/wdd131/place.html"
         },
         {
-            title: "Mobile App Project",
-            description: "A mobile app for tracking fitness activities.",
-            technologies: "Flutter, Dart",
-            link: "#"
+            title: "フォーム",
+            description: "ECサイトのフォームを簡易的に表現",
+            technologies: "HTML, CSS, JavaScript",
+            link: "https://daijir.github.io/wdd131/form.html"
         }
     ];
 
     const skills = [
         {
-            title: "Frontend Development",
-            description: "Proficient in front-end development using HTML, CSS, and JavaScript.",
-            experience: "3 years of experience building responsive web applications.",
+            title: "フロントエンド",
+            description: "HTML, CSS, and JavaScriptを使用した開発が得意である",
+            experience: "学校の課題での開発経験あり",
             projects: "Developed multiple web applications including e-commerce sites and personal blogs."
         },
         {
-            title: "Backend Development",
-            description: "Experienced in back-end development with Node.js and Express.",
-            experience: "2 years of experience creating RESTful APIs and server-side applications.",
-            projects: "Built several APIs for mobile and web applications, including authentication and data management systems."
+            title: "バックエンド開発",
+            description: "これからバックエンド開発を経験する予定です。",
+            experience: "経験なし",
+            projects: "プロジェクトなし"
         },
         {
-            title: "Mobile App Development",
-            description: "Skilled in mobile app development using Flutter and Dart.",
-            experience: "1 year of experience developing cross-platform mobile applications.",
-            projects: "Created fitness tracking and social networking apps with real-time data synchronization."
-        }
+            title: "CTF (Capture The Flag))",
+            description: "Hack The BoxやVulnHubなどを通じて20台以上の仮想マシンを攻略した経験があります。",
+            experience: "6カ月",
+            projects: "プロジェクトなし"
+        },
     ];
 
     const projectsContainer = document.getElementById('projects');
