@@ -7,10 +7,6 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Daijiro Sagane - Biography, SNS links, and projects">
     <meta name="author" content="Daijiro Sagane">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,33 +20,17 @@
             </ul>
         </nav>
     </header>
-    <main>          
+    <main>
         <section class="card">
-            <div class="card-header">
-                <h2>About Me</h2>
-            </div>
-            <div class="card-content">
-                <div class="right-top">
-                    <img id="selfie" src="images/selfie.jpg" alt="The picture of Daijiro Sagane" width="120" height="160">
-                </div>
-                <div class="left">
-                    <div class="left-top">
-                        <p>
-                            My name is Daijiro and I go by Dan. I was born and raised in Japan. I grew up in countryside so I often went to river and mountains near my house and enjoyed adventure during my childhood. Now I'm a college student studying Cybersecurity. I love learning new things, especially about technology, nature, and human culture. 
-                        </p>
-                        <h3>Saitama, Japan</h3>
-                    </div>
-                    <div class="left-bottom">
-                        <img id="national-flag" src="images/japan_flag.webp" alt="National Flag of Japan" width="150" height="100">
-                        <p>Japan, an island nation in East Asia, is known for its rich cultural heritage, technological advancements, and stunning natural landscapes. Due to its geographical separation from other major civilizations, Japan has developed a unique language and culter. Among its distinctive cultural elements, sushi and anime have garnered significant global attention.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>About Me</h2>
+            <p>My name is Daijiro and I go by Dan. I was born and raised in Japan. Now I'm a college student and studying Cybersecurity. I love to spend time with my friends and serve to my neighbers.</p>
+            <img src="images/selfie.jpg" alt="The picture of Daijiro Sagane">
+            <h3>Saitama, Japan</h3>
+            <img src="images/japan_flag.webp" alt="National Flag of Japan">
+            <p>Japan is an island country in East Asia located in the northwest Pacific Ocean. It is bordered by the Sea of Japan to the west and extends from the Sea of Okhotsk in the north to the East China Sea and Taiwan in the south. Part of the Pacific Ring of Fire, Japan comprises an archipelago of 6,852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.</p>
         </section>
         <section class="card">
-            <div class="card-header">
-                <h2>Web Dev Resources</h2>
-            </div>
+            <h2>Web Dev Resources</h2>
             <ul>
                 <li><a href="#">Resource 1</a></li>
                 <li><a href="#">Resource 2</a></li>
@@ -65,5 +45,9 @@
         <p><span id="currentyear"></span> | Daijiro Sagane | Japan</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
 </html>
