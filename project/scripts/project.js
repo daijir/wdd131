@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             projects: "プロジェクトなし"
         },
         {
-            title: "CTF (Capture The Flag))",
+            title: "CTF (Capture The Flag)",
             description: "Hack The BoxやVulnHubなどを通じて20台以上の仮想マシンを攻略した経験があります。",
             experience: "6カ月",
             projects: "プロジェクトなし"
