@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "フロントエンド",
             description: "HTML, CSS, and JavaScriptを使用した開発が得意である",
             experience: "学校の課題での開発経験あり",
-            projects: "Developed multiple web applications including e-commerce sites and personal blogs."
+            projects: "日本の気候, フォーム, など"
         },
         {
             title: "バックエンド開発",
